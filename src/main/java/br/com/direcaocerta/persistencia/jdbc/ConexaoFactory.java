@@ -11,9 +11,11 @@ public class ConexaoFactory {
 	public static Connection getConnection() {
 
 		try {
-			return DriverManager.getConnection("jdbc:postgresql://localhost:5432/direcaocerta","postgres","postgres");
+			return DriverManager.getConnection(
+					"jdbc:postgresql://localhost:5432/direcaocerta",
+					"postgres", "postgres");
 		} catch (SQLException e) {
-				//relançando a exceção
+			// relançando a exceção
 			throw new RuntimeException(e);
 		}
 	}
