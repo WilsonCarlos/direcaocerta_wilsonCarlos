@@ -3,7 +3,7 @@ package br.com.direcaocerta;
 import br.com.direcaocerta.entidades.Administrador;
 import br.com.direcaocerta.persistencia.jdbc.AdministradorDAO;
 
-public class TestUsuarioDAO {
+public class TestAdmistradorDAO {
 
 	public static void main(String[] args) {
 

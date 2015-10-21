@@ -34,7 +34,7 @@ public class TestEmpresaDAO {
 	public static void testAlterar() {
 
 		Empresa empresa = new Empresa();
-		// Criando o administrador
+		// alterando a empresa no banco
 		empresa.setId_empresa(2);
 		empresa.setNome_empresa("xyz");
 		empresa.setLogin_empresa("xyz@test.com");
@@ -50,7 +50,7 @@ public class TestEmpresaDAO {
 
 	public static void testExcluir() {
 		Empresa empresa = new Empresa();
-		// Criando o administrador
+		// deletando a empresa do banco
 
 		empresa.setId_empresa(1);
 
