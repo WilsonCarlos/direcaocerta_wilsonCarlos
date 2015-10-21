@@ -2,34 +2,42 @@ package br.com.direcaocerta.entidades;
 
 public class Administrador {
 
-	private Integer id_admin;
-	private String nome_admin;
-	private String login_admin;
-	private String senha_admin;
+	private Integer id_administrador;
+	private String nome_administrador;
+	private String login_administrador;
+	private String senha_administrador;
+	private String cpf_administrador;
 	
-	public Integer getId_admin() {
-		return id_admin;
+	public Integer getId_administrador() {
+		return id_administrador;
 	}
-	public void setId_admin(Integer id_admin) {
-		this.id_admin = id_admin;
+	public void setId_administrador(Integer id_administrador) {
+		this.id_administrador = id_administrador;
 	}
-	public String getNome_admin() {
-		return nome_admin;
+	public String getNome_administrador() {
+		return nome_administrador;
 	}
-	public void setNome_admin(String nome_admin) {
-		this.nome_admin = nome_admin;
+	public void setNome_administrador(String nome_administrador) {
+		this.nome_administrador = nome_administrador;
 	}
-	public String getLogin_admin() {
-		return login_admin;
+	public String getLogin_administrador() {
+		return login_administrador;
 	}
-	public void setLogin_admin(String login_admin) {
-		this.login_admin = login_admin;
+	public void setLogin_administrador(String login_administrador) {
+		this.login_administrador = login_administrador;
 	}
-	public String getSenha_admin() {
-		return senha_admin;
+	public String getSenha_administrador() {
+		return senha_administrador;
 	}
-	public void setSenha_admin(String senha_admin) {
-		this.senha_admin = senha_admin;
+	public void setSenha_administrador(String senha_administrador) {
+		this.senha_administrador = senha_administrador;
 	}
+	public String getCpf_administrador() {
+		return cpf_administrador;
+	}
+	public void setCpf_administrador(String cpf_administrador) {
+		this.cpf_administrador = cpf_administrador;
+	}
+	
 	
 }
