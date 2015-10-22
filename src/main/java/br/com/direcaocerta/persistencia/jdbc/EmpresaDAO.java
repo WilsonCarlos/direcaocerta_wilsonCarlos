@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import br.com.direcaocerta.entidades.Administrador;
 import br.com.direcaocerta.entidades.Empresa;
 
 public class EmpresaDAO {
@@ -69,6 +70,13 @@ public class EmpresaDAO {
 
 			e.printStackTrace();
 		}
-
+		
+	}
+	public void salvar(Empresa empresa){
+		if (empresa.getId_empresa()!=null) {
+			alterar(empresa);
+		}else{
+			cadastrar(empresa);
+		}
 	}
 }

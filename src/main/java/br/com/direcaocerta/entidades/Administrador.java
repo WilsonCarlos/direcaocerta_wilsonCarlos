@@ -38,6 +38,14 @@ public class Administrador {
 	public void setCpf_administrador(String cpf_administrador) {
 		this.cpf_administrador = cpf_administrador;
 	}
+	@Override
+	public String toString() {
+		return "Administrador [id_administrador=" + id_administrador
+				+ ", nome_administrador=" + nome_administrador
+				+ ", login_administrador=" + login_administrador
+				+ ", senha_administrador=" + senha_administrador
+				+ ", cpf_administrador=" + cpf_administrador + "]";
+	}
 	
 	
 }
