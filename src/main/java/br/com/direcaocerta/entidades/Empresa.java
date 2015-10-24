@@ -57,4 +57,12 @@ public class Empresa {
 		this.id_empresa = id_empresa;
 	}
 
+	@Override
+	public String toString() {
+		return "Empresa [nome_empresa=" + nome_empresa + ", cnpj_empresa="
+				+ cnpj_empresa + ", login_empresa=" + login_empresa
+				+ ", senha_empresa=" + senha_empresa + ", telefone_empresa="
+				+ telefone_empresa + ", id_empresa=" + id_empresa + "]";
+	}
+
 }

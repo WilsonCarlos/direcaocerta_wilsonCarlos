@@ -1,5 +1,7 @@
 package br.com.direcaocerta;
 
+import java.util.List;
+
 import br.com.direcaocerta.entidades.Administrador;
 import br.com.direcaocerta.entidades.Empresa;
 import br.com.direcaocerta.persistencia.jdbc.AdministradorDAO;
@@ -9,9 +11,11 @@ public class TestEmpresaDAO {
 
 	public static void main(String[] args) {
 
+		//testBuscarTodos();
+		testBuscarPorId();
 		// testCadastrar();
 		//testAlterar();
-		 testExcluir();
+		//testExcluir();
 	}
 
 	public static void testCadastrar() {
@@ -76,4 +80,21 @@ public class TestEmpresaDAO {
 			EmpresaDAO empresaDAO = new EmpresaDAO();
 			empresaDAO.salvar(empresa);
 	}
-}
+	private static void testBuscarPorId() {
+
+		EmpresaDAO empresaDAO = new EmpresaDAO();
+		Empresa empresa = empresaDAO.buscarPorId(1);
+		System.out.println(empresa);
+	}
+
+	private static void testBuscarTodos() {
+
+		EmpresaDAO empresaDAO = new EmpresaDAO();
+		List<Empresa> lista = empresaDAO.buscarTodos();
+		for (Empresa e : lista){
+			System.out.println(e);
+		}	
+		
+		Empresa empresa = empresaDAO.buscarPorId(1);
+		System.out.println(empresa);
+}}
