@@ -10,12 +10,31 @@ public class TestAdmistradorDAO {
 
 	public static void main(String[] args) {
 		
-		testBuscarTodos();
+		
+		testAutenticar();
+		//testBuscarTodos();
 		//testBuscarPorId();
 		//testSalvar();
 		// testCadastrar();
-		// testAlterar();
+		// testAlterar()q2;
 		//testExcluir();
+	}
+
+	private static void testAutenticar() {
+		// TODO Auto-generated method stub
+		
+		AdministradorDAO administradorDAO = new AdministradorDAO();
+		
+		Administrador administrador = new Administrador();
+		
+		administrador.setLogin_administrador("Raulzito");
+		administrador.setSenha_administrador("666");
+		
+		
+		Administrador adminRetorno = administradorDAO.autenticar(administrador);
+		
+		System.out.println(adminRetorno);
+		
 	}
 
 	private static void testBuscarPorId() {

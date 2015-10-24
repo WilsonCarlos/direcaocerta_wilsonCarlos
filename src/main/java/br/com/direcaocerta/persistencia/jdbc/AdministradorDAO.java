@@ -145,4 +145,48 @@ public List<Administrador> buscarTodos(){
 		}
 		return lista;
 	}
+	public Administrador autenticar (Administrador adminConsulta){
+		
+		String sql = "Select *from administrador where login_administrador = ? and senha_administrador=?";
+		
+		try (PreparedStatement preparador = con.prepareStatement(sql)){
+
+			preparador.setString(1, adminConsulta.getLogin_administrador());
+			preparador.setString(2, adminConsulta.getSenha_administrador());
+			
+			ResultSet resultado =  preparador.executeQuery();
+			
+			if (resultado.next()) {
+				
+			Administrador administrador = new Administrador();
+			administrador.setId_administrador(resultado.getInt("id_administrador"));
+			administrador.setNome_administrador(resultado.getString("nome_administrador"));
+			administrador.setLogin_administrador(resultado.getString("login_administrador"));
+			administrador.setSenha_administrador(resultado.getString("senha_administrador"));
+			administrador.setCpf_administrador(resultado.getString("cpf_administrador"));
+			
+			return administrador;
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			return null;
+	
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
