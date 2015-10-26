@@ -1,7 +1,11 @@
 package br.com.direcaocerta.entidades;
 
 public class Empresa {
-
+	
+	/**
+	 * 
+	 */
+	
 	private String nome_empresa;
 	private String cnpj_empresa;
 	private String login_empresa;

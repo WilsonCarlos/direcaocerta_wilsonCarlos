@@ -1,6 +1,5 @@
 package br.com.direcaocerta;
 
-import java.util.Iterator;
 import java.util.List;
 
 import br.com.direcaocerta.entidades.Administrador;
@@ -9,32 +8,30 @@ import br.com.direcaocerta.persistencia.jdbc.AdministradorDAO;
 public class TestAdmistradorDAO {
 
 	public static void main(String[] args) {
-		
-		
+
 		testAutenticar();
-		//testBuscarTodos();
-		//testBuscarPorId();
-		//testSalvar();
+		// testBuscarTodos();
+		// testBuscarPorId();
+		// testSalvar();
 		// testCadastrar();
 		// testAlterar()q2;
-		//testExcluir();
+		// testExcluir();
 	}
 
 	private static void testAutenticar() {
 		// TODO Auto-generated method stub
-		
+
 		AdministradorDAO administradorDAO = new AdministradorDAO();
-		
+
 		Administrador administrador = new Administrador();
-		
+
 		administrador.setLogin_administrador("Raulzito");
 		administrador.setSenha_administrador("666");
-		
-		
+
 		Administrador adminRetorno = administradorDAO.autenticar(administrador);
-		
+
 		System.out.println(adminRetorno);
-		
+
 	}
 
 	private static void testBuscarPorId() {
@@ -48,13 +45,14 @@ public class TestAdmistradorDAO {
 
 		AdministradorDAO adminDAO = new AdministradorDAO();
 		List<Administrador> lista = adminDAO.buscarTodos();
-		for (Administrador a : lista){
+		for (Administrador a : lista) {
 			System.out.println(a);
-		}	
-		
+		}
+
 		Administrador administrador = adminDAO.buscarPorId(1);
 		System.out.println(administrador);
 	}
+
 	public static void testCadastrar() {
 		Administrador administrador = new Administrador();
 		// Criando o administrador
@@ -94,16 +92,17 @@ public class TestAdmistradorDAO {
 
 		System.out.println("Excluido com Sucesso!");
 	}
-	public static void testSalvar(){
+
+	public static void testSalvar() {
 		Administrador administrador = new Administrador();
-		
-			administrador.setId_administrador(2);
-			administrador.setNome_administrador("Evil");
-			administrador.setCpf_administrador("12312354");
-			administrador.setLogin_administrador("diabo");
-			administrador.setSenha_administrador("asdrfasdf");
-			
-			AdministradorDAO administradorDAO = new AdministradorDAO();
-			administradorDAO.salvar(administrador);
+
+		administrador.setId_administrador(2);
+		administrador.setNome_administrador("Evil");
+		administrador.setCpf_administrador("12312354");
+		administrador.setLogin_administrador("diabo");
+		administrador.setSenha_administrador("asdrfasdf");
+
+		AdministradorDAO administradorDAO = new AdministradorDAO();
+		administradorDAO.salvar(administrador);
 	}
 }

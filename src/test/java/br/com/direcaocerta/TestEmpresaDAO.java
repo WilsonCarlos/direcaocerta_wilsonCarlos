@@ -2,20 +2,18 @@ package br.com.direcaocerta;
 
 import java.util.List;
 
-import br.com.direcaocerta.entidades.Administrador;
 import br.com.direcaocerta.entidades.Empresa;
-import br.com.direcaocerta.persistencia.jdbc.AdministradorDAO;
 import br.com.direcaocerta.persistencia.jdbc.EmpresaDAO;
 
 public class TestEmpresaDAO {
 
 	public static void main(String[] args) {
 
-		//testBuscarTodos();
+		// testBuscarTodos();
 		testBuscarPorId();
 		// testCadastrar();
-		//testAlterar();
-		//testExcluir();
+		// testAlterar();
+		// testExcluir();
 	}
 
 	public static void testCadastrar() {
@@ -66,20 +64,21 @@ public class TestEmpresaDAO {
 		System.out.println("Excluido com Sucesso!");
 
 	}
-	public static void testSalvar(){
+
+	public static void testSalvar() {
 		Empresa empresa = new Empresa();
-		
-		
+
 		empresa.setId_empresa(1);
 		empresa.setCnpj_empresa("12378127389");
 		empresa.setNome_empresa("testando");
 		empresa.setLogin_empresa("test");
 		empresa.setSenha_empresa("123");
 		empresa.setTelefone_empresa("82899999");
-		
-			EmpresaDAO empresaDAO = new EmpresaDAO();
-			empresaDAO.salvar(empresa);
+
+		EmpresaDAO empresaDAO = new EmpresaDAO();
+		empresaDAO.salvar(empresa);
 	}
+
 	private static void testBuscarPorId() {
 
 		EmpresaDAO empresaDAO = new EmpresaDAO();
@@ -91,10 +90,11 @@ public class TestEmpresaDAO {
 
 		EmpresaDAO empresaDAO = new EmpresaDAO();
 		List<Empresa> lista = empresaDAO.buscarTodos();
-		for (Empresa e : lista){
+		for (Empresa e : lista) {
 			System.out.println(e);
-		}	
-		
+		}
+
 		Empresa empresa = empresaDAO.buscarPorId(1);
 		System.out.println(empresa);
-}}
+	}
+}
