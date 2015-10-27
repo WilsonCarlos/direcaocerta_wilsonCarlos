@@ -10,7 +10,7 @@ public class TestEmpresaDAO {
 	public static void main(String[] args) {
 
 		// testBuscarTodos();
-		testBuscarPorId();
+		//testBuscarPorId();
 		// testCadastrar();
 		// testAlterar();
 		// testExcluir();
