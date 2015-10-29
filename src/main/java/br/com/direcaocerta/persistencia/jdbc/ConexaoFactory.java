@@ -1,24 +1,57 @@
-package br.com.direcaocerta.persistencia.jdbc;
+@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
 
-public class ConexaoFactory {
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
 
-	/**
-	 * 
-	 * @return
-	 */
-	public static Connection getConnection() {
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
 
-		try {
-			return DriverManager.getConnection(
-					"jdbc:postgresql://localhost:5432/direcaocerta",
-					"postgres", "postgres");
-		} catch (SQLException e) {
-		
-			throw new RuntimeException(e);
-		}
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
 	}
-}

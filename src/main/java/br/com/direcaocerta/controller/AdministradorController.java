@@ -1,29 +1,74 @@
-package br.com.direcaocerta.controller;
+@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
 
-import java.io.IOException;
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
 
-@WebServlet(name = "/administradorController.do")
-public class AdministradorController extends HttpServlet {
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
 
-	/**
-	 * 
-	 */
-	
-	public AdministradorController() {
-		System.out.println("Novo Servlet");
-	}
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
 
-	/**
-	 * 
-	 */
-	
-	@Override
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+
+		System.out.println("Chamou!");
+		super.doGet(req, resp);
+	}@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
@@ -31,4 +76,3 @@ public class AdministradorController extends HttpServlet {
 		System.out.println("Chamou!");
 		super.doGet(req, resp);
 	}
-}
